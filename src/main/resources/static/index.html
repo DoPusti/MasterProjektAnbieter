@@ -2,22 +2,24 @@
 <html>
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title>Anwendung zum Hochladen von Zusicherungen</title>
+    <title class="dynamic-content">{{title}}</title>
     <link href="skeleton.css" rel="stylesheet" type="text/css">
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="mustache.js"></script>
+    <script src="render.js"></script>
 </head>
 
 <body>
 
 <form action="/submit-form" enctype="multipart/form-data" method="POST">
-    <h2 class="modern-heading">Anwendung zum Hochladen von Zusicherungen</h2>
+    <h2 class="modern-heading dynamic-content">{{title}}</h2>
     <div class="row">
         <div class="six columns">
-            <button class="button-primary" type="submit">Dateien hochladen</button>
+            <button class="button-primary dynamic-content" type="submit">{{LoadFile}}</button>
         </div>
         <div class="six columns">
-            <label for="files">Zusicherungen (XML/JSON)</label>
+            <label for="files" class="dynamic-content">{{Assurances}}</label>
             <input accept=".json, .xml" class="u-full-width" id="files" name="files" type="file" multiple>
         </div>
     </div>
