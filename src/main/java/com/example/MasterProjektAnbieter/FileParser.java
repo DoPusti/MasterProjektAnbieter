@@ -21,7 +21,7 @@ import java.lang.reflect.Field;
 public class FileParser {
 
     public Field[] getFields() {
-        Aasxpackage AASXPackage = new Aasxpackage();
+        Aasxpackage AasxPackage = Aasxpackage.builder().build();
         Class<?> clazz = Aasxpackage.class;
         Field[] fields = clazz.getDeclaredFields();
         return fields;

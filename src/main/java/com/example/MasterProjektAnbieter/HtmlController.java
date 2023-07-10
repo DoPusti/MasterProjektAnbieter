@@ -9,6 +9,7 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.util.Objects;
 
 @RestController
@@ -25,12 +26,17 @@ public class HtmlController {
                    // System.out.println("Objekt fertig mit " + Aasxpackage.getLength());
                     return "JSON-Datei erfolgreich verarbeitet.";
                 } else if (Objects.equals(file.getContentType(), "text/xml")) {
+                    Field[] fields = fileParser.getFields();
+                    for (Field field : fields) {
+                        System.out.println(field.getName());
+                        System.out.println(field.getName());
+                    }
 
-                    Aasxpackage AASXPackage =  fileParser.parseXMLObject(file);
+                    //Aasxpackage AASXPackage =  fileParser.parseXMLObject(file);
                    // System.out.println("Objekt fertig mit " + Aasxpackage.getX());
                     return "XML-Datei erfolgreich verarbeitet.";
                 }
-            } catch (IOException | ParserConfigurationException | SAXException e) {
+            } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
