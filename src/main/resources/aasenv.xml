@@ -1,0 +1,21 @@
+<aas:aasev>
+    <aas:assetAdministrationsShells>
+    </aas:assetAdministrationsShells>
+    <aas:assets>
+        <aas:asset>
+            <aas:idShort>123</aas:idShort>
+            <aas:identification idType="IRI">https:123</aas:identification>
+            <aas:kind>Instance</aas:kind>
+        </aas:asset>
+    </aas:assets>
+    <aas:submodels>
+        <aas:submodel>
+            <aas:idShort>123</aas:idShort>
+            <aas:identification idType="IRI">https:google</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+                <aas:keys/>
+            </aas:semanticId>
+        </aas:submodel>
+    </aas:submodels>
+</aas:aasev>

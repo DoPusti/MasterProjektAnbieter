@@ -26,6 +26,8 @@ public class HtmlController {
                    // System.out.println("Objekt fertig mit " + Aasxpackage.getLength());
                     return "JSON-Datei erfolgreich verarbeitet.";
                 } else if (Objects.equals(file.getContentType(), "text/xml")) {
+
+
                     Field[] fields = fileParser.getFields();
                     for (Field field : fields) {
                         System.out.println(field.getName());
