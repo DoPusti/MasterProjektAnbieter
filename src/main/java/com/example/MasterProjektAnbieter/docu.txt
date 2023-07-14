@@ -1,0 +1,4 @@
+https://github.com/admin-shell-io/java-serializer wird gerade als Prototyp aufgebaut um AASX, JSON und XML zu serialisieren
+Kontakt hierfür michael.jacoby@iosb.fraunhofer.de
+
+JAXB wird als Bibiliothek genommen um eine XML auf ein Java Object zu mappen. @Data für Getter und Setter Boilercode

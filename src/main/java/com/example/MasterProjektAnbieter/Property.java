@@ -6,17 +6,16 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlType;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"idShort","identification","kind","semanticId","qualifier","submodelElements"})
-public class SubModel {
+@XmlType(propOrder = {"idShort","category","kind","semanticId","qualifier","valueType","value"})
+public class Property {
+
     @XmlElement(name="idShort")
     private String idShort;
 
-    @XmlElement(name="identification")
-    private String identification;
+    @XmlElement(name="category")
+    private String category;
 
     @XmlElement(name="kind")
     private String kind;
@@ -27,7 +26,10 @@ public class SubModel {
     @XmlElement(name="qualifier")
     private String qualifier;
 
-    @XmlElement(name ="submodelElements")
-    private List<SubModelElement> submodelElements;
+    @XmlElement(name="valueType")
+    private String valueType;
+
+    @XmlElement(name="value")
+    private String value;
 
 }

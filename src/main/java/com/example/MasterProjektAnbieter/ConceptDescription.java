@@ -7,27 +7,17 @@ import jakarta.xml.bind.annotation.XmlType;
 import lombok.Data;
 
 import java.util.List;
-
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"idShort","identification","kind","semanticId","qualifier","submodelElements"})
-public class SubModel {
+@XmlType(propOrder = {"idShort","identification","embeddedDataSpecification"})
+public class ConceptDescription {
+
     @XmlElement(name="idShort")
     private String idShort;
 
     @XmlElement(name="identification")
     private String identification;
 
-    @XmlElement(name="kind")
-    private String kind;
-
-    @XmlElement(name="semanticId")
-    private SemanticId semanticId;
-
-    @XmlElement(name="qualifier")
-    private String qualifier;
-
-    @XmlElement(name ="submodelElements")
-    private List<SubModelElement> submodelElements;
-
+    @XmlElement(name ="embeddedDataSpecification")
+    private List<EmbeddedDataSpecification> embeddedDataSpecification;
 }
