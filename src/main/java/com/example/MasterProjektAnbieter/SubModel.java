@@ -28,6 +28,6 @@ public class SubModel {
     private String qualifier;
 
     @XmlElement(name ="submodelElements")
-    private List<SubModelElement> submodelElements;
+    private SubModelElements submodelElements;
 
 }

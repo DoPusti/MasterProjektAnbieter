@@ -12,5 +12,19 @@ import lombok.Data;
 public class DataSpecificationIEC61360 {
 
     @XmlElement(name="preferredName")
-    private DataSpecificationIEC61360 preferredName;
+    private PreferredName preferredName;
+
+    @XmlElement(name="shortName")
+    private String shortName;
+
+    @XmlElement(name="unit")
+    private String unit;
+
+    @XmlElement(name="dataType")
+    private String dataType;
+
+    @XmlElement(name="definition")
+    private Definition definition;
+
+
 }

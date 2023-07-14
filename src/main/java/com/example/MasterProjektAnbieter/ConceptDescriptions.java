@@ -7,11 +7,14 @@ import jakarta.xml.bind.annotation.XmlType;
 import lombok.Data;
 
 import java.util.List;
-
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"keys"})
-public class AssetRef {
-    @XmlElement(name ="keys")
-    private Keys keys;
+@XmlType(propOrder = "conceptDescription")
+//@XmlType(propOrder = {"idShort","identification","embeddedDataSpecification"})
+public class ConceptDescriptions {
+
+    @XmlElement(name = "conceptDescription")
+    private List<ConceptDescription> conceptDescription;
+
+
 }

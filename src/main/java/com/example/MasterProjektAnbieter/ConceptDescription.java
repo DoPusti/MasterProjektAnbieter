@@ -11,7 +11,6 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(propOrder = {"idShort","identification","embeddedDataSpecification"})
 public class ConceptDescription {
-
     @XmlElement(name="idShort")
     private String idShort;
 

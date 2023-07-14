@@ -10,8 +10,9 @@ import java.util.List;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"keys"})
-public class AssetRef {
-    @XmlElement(name ="keys")
-    private Keys keys;
+@XmlType(propOrder = {"submodelElement"})
+public class SubModelElements {
+
+    @XmlElement(name = "submodelElement")
+    private List<SubModelElement> submodelElement;
 }

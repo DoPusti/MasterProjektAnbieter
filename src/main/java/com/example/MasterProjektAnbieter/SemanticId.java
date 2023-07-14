@@ -9,5 +9,5 @@ import lombok.Data;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SemanticId {
     @XmlElement(name="keys")
-    private String keys;
+    private Keys keys;
 }

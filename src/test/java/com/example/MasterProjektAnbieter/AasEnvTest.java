@@ -22,6 +22,8 @@ class AasEnvTest {
             AasEnv aasenv = (AasEnv) unmarshaller.unmarshal(file);
 
             System.out.println(aasenv.getAssetAdministrationShells());
+            System.out.println(aasenv.getAssets());
+            System.out.println(aasenv.getSubmodels());
 
         } catch (Exception e) {
             e.printStackTrace();

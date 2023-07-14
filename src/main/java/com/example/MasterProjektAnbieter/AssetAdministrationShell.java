@@ -23,7 +23,7 @@ public class AssetAdministrationShell {
     private AssetRef assetRef;
 
     @XmlElement(name ="submodelRefs")
-    private List<SubModelRefs> submodelRefs;
+    private SubModelRefs submodelRefs;
 
     @XmlElement(name ="conceptDictionaries")
     private String conceptDictionaries;

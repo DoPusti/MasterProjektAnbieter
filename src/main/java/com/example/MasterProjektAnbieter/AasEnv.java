@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 @XmlRootElement(name ="aasenv")
-@XmlType(propOrder = {"assetAdministrationShells"})
+@XmlType(propOrder = {"assetAdministrationShells","assets","submodels"})
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class AasEnv {
@@ -13,20 +13,18 @@ public class AasEnv {
     @XmlElement(name ="assetAdministrationShells")
     private AssetAdministrationShells assetAdministrationShells;
 
+    @XmlElement(name ="assets")
+    private Assets assets;
 
-    /*
-    @XmlElement(name ="asset")
-    private Asset assets;
 
-     */
-    /*
     @XmlElement(name ="submodels")
-    private List<SubModel> submodels;
-    */
+    private List<SubModels> submodels;
 
+    // Wird aktuell nicht benötigt
     /*
     @XmlElement(name ="conceptDescriptions")
-    private List<ConceptDescription> conceptDescriptions;
-    */
+    private ConceptDescriptions conceptDescriptions;
+
+     */
 
 }
