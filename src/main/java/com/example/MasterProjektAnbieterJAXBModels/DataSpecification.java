@@ -1,4 +1,4 @@
-package com.example.MasterProjektAnbieter;
+package com.example.MasterProjektAnbieterJAXBModels;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -8,10 +8,8 @@ import lombok.Data;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"keys"})
-public class SubmodelRef {
-    @XmlElement(name = "keys")
-    private Keys keys;
-
-
+@XmlType(propOrder = {"dataSpecificationIEC61360"})
+public class DataSpecification {
+    @XmlElement(name="dataSpecificationIEC61360")
+    private DataSpecificationIEC61360 dataSpecificationIEC61360;
 }

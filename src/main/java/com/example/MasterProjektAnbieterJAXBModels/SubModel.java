@@ -1,4 +1,4 @@
-package com.example.MasterProjektAnbieter;
+package com.example.MasterProjektAnbieterJAXBModels;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -8,14 +8,13 @@ import lombok.Data;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"idShort","category","kind","semanticId","qualifier","valueType","value"})
-public class Property {
-
+@XmlType(propOrder = {"idShort","identification","kind","semanticId","qualifier","submodelElements"})
+public class SubModel {
     @XmlElement(name="idShort")
     private String idShort;
 
-    @XmlElement(name="category")
-    private String category;
+    @XmlElement(name="identification")
+    private String identification;
 
     @XmlElement(name="kind")
     private String kind;
@@ -26,10 +25,7 @@ public class Property {
     @XmlElement(name="qualifier")
     private String qualifier;
 
-    @XmlElement(name="valueType")
-    private String valueType;
-
-    @XmlElement(name="value")
-    private String value;
+    @XmlElement(name ="submodelElements")
+    private SubModelElements submodelElements;
 
 }

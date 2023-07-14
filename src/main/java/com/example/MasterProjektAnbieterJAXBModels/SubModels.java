@@ -1,4 +1,4 @@
-package com.example.MasterProjektAnbieter;
+package com.example.MasterProjektAnbieterJAXBModels;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -10,8 +10,8 @@ import java.util.List;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"key"})
-public class Keys {
-    @XmlElement(name ="key")
-    private List<Key> key;
+@XmlType(propOrder = {"submodel"})
+public class SubModels {
+    @XmlElement(name = "submodel")
+    private List<SubModel> submodel;
 }

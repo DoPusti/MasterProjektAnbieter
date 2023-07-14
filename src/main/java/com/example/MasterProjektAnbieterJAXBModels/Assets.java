@@ -1,4 +1,4 @@
-package com.example.MasterProjektAnbieter;
+package com.example.MasterProjektAnbieterJAXBModels;
 
 import jakarta.xml.bind.annotation.*;
 import lombok.Data;

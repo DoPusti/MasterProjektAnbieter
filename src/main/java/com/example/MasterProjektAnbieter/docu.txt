@@ -1,4 +1,20 @@
 https://github.com/admin-shell-io/java-serializer wird gerade als Prototyp aufgebaut um AASX, JSON und XML zu serialisieren
 Kontakt hierfür michael.jacoby@iosb.fraunhofer.de
 
-JAXB wird als Bibiliothek genommen um eine XML auf ein Java Object zu mappen. @Data für Getter und Setter Boilercode
+JAXB wird als Bibiliothek genommen um eine XML auf ein Java Object zu mappen. @Data von Lombook für Getter und Setter Boilercode
+
+
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>1.5.3.Final</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.20</version>
+                        </path>
+                        muss verwendet werden um beide zu nehmen
+                        genauso wie die property:
+                        lombok.addLombokGeneratedAnnotation = true
+                        lombok.anyConstructor.addConstructorProperties = true

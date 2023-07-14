@@ -1,11 +1,11 @@
 package com.example.MasterProjektAnbieter;
 
+import com.example.MasterProjektAnbieterJAXBModels.AasEnv;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.Unmarshaller;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.util.List;
 
 class AasEnvTest {
 
